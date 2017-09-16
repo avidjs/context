@@ -1,0 +1,50 @@
+{
+  "name": "@avidjs/context",
+  "version": "0.0.0",
+  "description": "Creates an Avid middleware context object.",
+  "author": "Connor Wiseman",
+  "contributors": [
+    {
+      "name": "Connor Wiseman",
+      "url": "https://github.com/ConnorWiseman/"
+    }
+  ],
+  "homepage": "https://github.com/avidjs/context#readme",
+  "keywords": [
+    "avid"
+  ],
+  "files": [
+    "lib/"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avidjs/context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avidjs/context/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "benchmark": "matcha",
+    "coverage": "codecov",
+    "lint": "eslint lib/",
+    "test": "cross-env NODE_ENV=test nyc mocha test/**/*.spec.js"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "dependencies": {
+    "@avidjs/request": "0.0.0",
+    "@avidjs/response": "0.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "codecov": "^2.3.0",
+    "cross-env": "^5.0.5",
+    "eslint": "^4.6.1",
+    "matcha": "^0.7.0",
+    "mocha": "^3.5.3",
+    "nyc": "^11.2.1"
+  }
+}
