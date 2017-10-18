@@ -20,4 +20,8 @@ describe('context', () => {
   it('should return an object', () => {
     context(() => {}, {}, {}).should.be.an('Object');
   });
+
+  it('should return object with `request` and `response` properties', () => {
+    context(() => {}, {}, {}).should.have.all.keys('request', 'response');
+  });
 });
