@@ -34,7 +34,7 @@
     "node": ">=7.6.0"
   },
   "dependencies": {
-    "@avidjs/request": "0.0.2",
+    "@avidjs/request": "0.0.3",
     "@avidjs/response": "0.0.0",
     "lodash.clonedeep": "^4.5.0"
   },
