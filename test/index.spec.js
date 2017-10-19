@@ -18,10 +18,19 @@ describe('context', () => {
   });
 
   it('should return an object', () => {
-    context(() => {}, {}, {}).should.be.an('Object');
+    context({}, {}, {}).should.be.an('Object');
   });
 
   it('should return object with `request` and `response` properties', () => {
-    context(() => {}, {}, {}).should.have.all.keys('request', 'response');
+    context({}, {}, {}).should.have.all.keys('request', 'response');
+  });
+
+  it('should return object with user-defined properties', () => {
+    context({
+      bool: true,
+      obj:  {
+        nested: 'yup'
+      }
+    }, {}, {}).should.have.all.keys('bool', 'obj', 'request', 'response');
   });
 });
